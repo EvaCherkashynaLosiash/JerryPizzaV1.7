@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /*отступ для заголовка*/
+    padding: 0; /*внутренние отступы вокруг текста в заглавке*/
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center; /* понишает текст по сентру*/
+    background-color: orange;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+}
+p {
+    margin: 0;
+    font-size: 1 rem;
+    color: rgb(124 45 18);
+}
+
+.banner {
+    width: 100%;
+    max-width: 700px; /* ограничена 600px*/
+    border-radius: 100px; /*округляет углы*/
+    margin: 15px auto;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.menuLink {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(249 115 22) ; /* фоновый цвет (взято из tailwind)*/
+    color: #fff;  /* цвет шрифта */
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    box-shadow: 0 0 5px cyan,
+    0 0 25 px cyan;
+}
+
+.menulink:hover {
+    background-color: rgb(234 88 12); /* цвет когда ты наводишь курсором (взято из tailwind)*/
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50 px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+.tablemenu {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tablemenu td {
+    border: 5px solid rgb(234 88 12);
+    padding: 10px;
+    text-align: center;
+}
+
+.tablemenu th { /*Название, ингр, цена*/
+    background-color:  rgb(234 88 12); /*Оранжевый фон для заголовков таблицы*/
+}
+
+.tablemenu tr:nth-child(even) { /*задает оранжевый фон для всех парных (четных) строк таблицы (<tr>) */
+    background-color:  rgb(234 88 12);
+}

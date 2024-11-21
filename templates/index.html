@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Jerry Pizza{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header> <!-- заголовок -->
+        <h1>Jerry Pizza</h1>
+        <img src="https://i.postimg.cc/m2K84K33/photo-2024-11-21-13-50-27.jpg" class="banner">
+    </header>
+    <nav>
+        <a href="/menu" class="menuLink">Меню</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
